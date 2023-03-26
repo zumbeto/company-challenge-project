@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Roboto+Mono:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,200&display=swap');
+
+/*
+STYLE GUIDE
+
+1.CUSTOM COLORS
+#f5f6fa
+#fbc531
+#002255
+#1e272e
+
+2.TYPOGRAPHY
+FONT-FACE: "Roboto Mono" or "Alkatra"
+
+/* Universal Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Alkatra', cursive;
+}
+
+/****************************** Header ******************************/
+#header {
+    width: 100%;
+    min-height: 15.6rem;
+    position: fixed;
+    z-index: 1000;
+}
+
+.heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    background-color: #1e272e;
+}
+
+#header h1 {
+    font-size: 5rem;
+    color: #f5f6fa;
+    letter-spacing: .7rem;
+    word-spacing: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.logo {
+    width: 6rem;
+    transform: translateY(1rem);
+    cursor: pointer;
+}
+
+/****************************** Navigation Bar ******************************/
+ul.navbar {
+    display: flex;
+    width: 100%;
+    min-height: 8.7rem;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3rem 2rem 3rem 2rem;
+    background-color: #fbc531;
+    box-shadow: 0 .2rem 1rem 0 rgb(121, 121, 121);
+    font-weight: 300;
+}
+
+ul.navbar li {
+    list-style: none;
+}
+
+ul.navbar .nav-link, .nav-link:link, .nav-link:visited {
+    text-decoration-color: #fbc531;
+    text-decoration-thickness: .2rem;
+    font-size: 1.6rem;
+    color: #f5f6fa;
+    background-color: #002255;
+    border: .1rem solid #fbc531;
+    border-radius: 1rem;
+    padding: .5rem 1rem .5rem 1rem;
+    transition: all .3s;
+}
+
+ul.navbar li .nav-link:hover {
+    text-decoration-color: #f5f6fa;
+    cursor: pointer;
+    border: .1rem solid #f5f6fa;
+    color: #fbc531;
+}
+
+/****************************** HERO SECTION ******************************/
+#hero {
+    display: flex;
+    width: 100%;
+    min-height: 100rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 19.6rem;
+    background: url(images/hero-background-image-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/hero-background-image-unsplash.jpg);
+    background-size: 100% 100%;
+}
+
+.hero-heading-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0 2rem 0;
+    margin-bottom: 20rem;
+    background-color: rgba(30, 39, 46, 0.7);
+}
+
+.hero-heading-main {
+    color: #f5f6fa;
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .7rem;
+    animation: fadeInLeft 1s ease-out;
+}
+
+.hero-heading-sub {
+    color: #f5f6fa;
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: .2rem;
+    animation: fadeInRight 1s ease-out;
+}
+
+.line {
+    width: 2%;
+    border: .1rem solid #fbc531;
+    animation: fadeInRight 1s ease-out;
+    margin-bottom: .7rem;
+}
+
+.cta, .cta:link, .cta:visited {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    color: #f5f6fa;
+    background-color: #002255;
+    padding: 1rem 2rem 1rem 2rem;
+    border: .1rem solid #fbc531;
+    border-radius: 1rem;
+    margin-top: 5rem;
+    transition: all .5s;
+    animation: fadeInUp 1s ease-out;
+}
+
+.cta:hover {
+    background-color: #fbc531;
+    color: #002255;
+    border: .1rem solid #f5f6fa;
+}
+
+/****************************** HOLIDAYS SECTION ******************************/
+
+#holidays {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    min-height: 100rem;
+    top: 19.6rem;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 65rem;
+    overflow: hidden;
+}
+
+.holidays-img {
+    max-width: 40rem;
+    height: 60%;
+    display: block;
+}
+
+.holidays-heading {
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+}
+
+.holidays-description {
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+
+/****************************** ANIMATIONS ******************************/
+@keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    80% {
+      transform: translateX(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80% {
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0); }
+    }
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
