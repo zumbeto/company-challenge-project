@@ -170,44 +170,97 @@ ul.navbar li .nav-link:hover {
 }
 
 /****************************** HOLIDAYS SECTION ******************************/
-
-#holidays {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    min-height: 100rem;
-    top: 19.6rem;
-}
-
 .container {
+    position: relative;
+    top: 19.6rem;
     display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
+    min-height: 70rem;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 50rem;
+}
+
+.image-card {
+    display: inline-flex;
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    cursor: pointer;
+    border: .5rem double #1e272e;
+}
+
+.image-card .overlay {
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.image-card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background-color: rgba(30, 39, 46, 0.7);
+    width: 100%;
+    padding-top: .5rem;
+    opacity: 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.image-card:hover .overlay-text {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.overlay-text {
+    color: #f5f6fa;
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.fadeIn-top {
+    top: 20%;
+}
+
+.holidays-img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .image-container {
     display: flex;
+    gap: 8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.holidays-heading-container {
+    display: flex;
+    height: 10rem;
+    width: 100%;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-    width: 70%;
-    height: 65rem;
-    overflow: hidden;
 }
 
-.holidays-img {
-    max-width: 40rem;
-    height: 60%;
-    display: block;
-}
-
-.holidays-heading {
+.holidays-heading-main {
     font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
