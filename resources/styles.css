@@ -159,14 +159,14 @@ ul.navbar li .nav-link:hover {
     border: .1rem solid #fbc531;
     border-radius: 1rem;
     margin-top: 5rem;
-    transition: all .5s;
+    transition: all .3s;
     animation: fadeInUp 1s ease-out;
 }
 
 .cta:hover {
     background-color: #fbc531;
     color: #002255;
-    border: .1rem solid #f5f6fa;
+    border: .1rem solid #002255;
 }
 
 /****************************** HOLIDAYS SECTION ******************************/
@@ -174,68 +174,11 @@ ul.navbar li .nav-link:hover {
     position: relative;
     top: 19.6rem;
     display: flex;
-    min-height: 70rem;
+    min-height: 100rem;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 50rem;
-}
-
-.image-card {
-    display: inline-flex;
-    width: 30rem;
-    height: 30rem;
-    position: relative;
-    cursor: pointer;
-    border: .5rem double #1e272e;
-}
-
-.image-card .overlay {
-    background: rgba(0, 0, 0, 0.4);
-    position: absolute;
-    height: 99%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0;
-    transition: all 0.4s ease-in-out 0s;
-}
-
-.image-card:hover .overlay {
-    opacity: 1;
-}
-
-.overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    background-color: rgba(30, 39, 46, 0.7);
-    width: 100%;
-    padding-top: .5rem;
-    opacity: 0;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-.image-card:hover .overlay-text {
-    top: 50%;
-    left: 50%;
-    opacity: 1;
-}
-
-.overlay-text {
-    color: #f5f6fa;
-    font-size: 2rem;
-    font-weight: 100;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-}
-
-.fadeIn-top {
-    top: 20%;
 }
 
 .holidays-img {
@@ -270,6 +213,65 @@ ul.navbar li .nav-link:hover {
 .holidays-description {
     font-size: 1.8rem;
     font-weight: 100;
+}
+
+.image-card {
+    display: inline-flex;
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    cursor: pointer;
+    border: .5rem double #1e272e;
+}
+
+.image-card .overlay {
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.image-card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    color: #f5f6fa;
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background-color: rgba(30, 39, 46, 0.7);
+    width: 100%;
+    padding-top: .5rem;
+    opacity: 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.image-card:hover .overlay-text {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.fadeIn-top {
+    top: 20%;
+}
+
+button.cta {
+    padding: 1.5rem;
+    margin: 0;
 }
 
 /****************************** ANIMATIONS ******************************/
