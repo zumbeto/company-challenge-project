@@ -116,6 +116,16 @@ body {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 1600px) {
+    #header h1 {
+        font-size: 3.5rem;
+    }
+
+    #header .logo {
+        width: 4.5rem;
+    }
+}
+
 @media only screen and (max-width: 680px) {
     #header h1 {
         font-size: 2rem;
@@ -123,7 +133,7 @@ body {
         margin-bottom: 1rem;
     }
 
-    .logo {
+    #header .logo {
         width: 3rem;
         margin-bottom: .3rem;
     }
@@ -238,6 +248,12 @@ ul.navbar li .nav-link:hover {
     background-color: #fbc531;
     color: #002255;
     border: .1rem solid #002255;
+}
+
+@media only screen and (max-width: 1600px) {
+    #hero {
+        top: 13.3rem;
+    }
 }
 
 @media only screen and (max-width: 680px) {
