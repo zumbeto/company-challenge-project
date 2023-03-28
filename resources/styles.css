@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
 
-
 /*
 STYLE GUIDE
 
@@ -12,6 +11,7 @@ STYLE GUIDE
 
 2.TYPOGRAPHY
 FONT-FACE: "Montserrat" or "Alkatra"
+*/
 
 /* Universal Styles */
 * {
@@ -31,7 +31,7 @@ body {
 
 .container {
     position: relative;
-    top: 15.6rem;
+    top: 15.6rem; /* To compensate for fixed header */
     display: flex;
     min-height: 120rem;
     flex-direction: column;
@@ -338,6 +338,26 @@ button.cta {
     line-height: 1.5;
     padding: 1rem 1rem 0 1rem;
 }
+
+/****************************** ABOUT US SECTION ******************************/
+#about .container {
+    min-height: 60rem;
+}
+
+#about .heading-container {
+    width: 40%;
+    height: 100%;
+    text-align: justify;
+    gap: 2rem;
+    line-height: 1.7;
+    word-spacing: .3rem;
+    letter-spacing: .3rem;
+}
+
+#about .line {
+    width: 5%;
+}
+
 
 /****************************** ANIMATIONS ******************************/
 @keyframes fadeInLeft {
