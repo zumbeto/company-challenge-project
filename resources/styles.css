@@ -358,6 +358,97 @@ button.cta {
     width: 5%;
 }
 
+/****************************** CONTACT US SECTION ******************************/
+#contact .container {
+    position: relative;
+    top: 15.6rem;
+    display: flex;
+    min-height: 120rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.centre-finder {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 1rem;
+}
+
+.centre-finder input {
+    height: 7rem;
+    border: .5rem double rgba(30, 39, 46, 0.3);
+    padding: 2rem;
+    text-align: center;
+}
+
+.centre-finder input:focus {
+    outline: none;
+    border: .2rem solid #fbc531;
+}
+
+.centre-finder .line {
+    width: 8%;
+    align-self: center;
+}
+
+.contact-card-container {
+    display: flex;
+    gap: 8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-card {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50rem;
+    height: 70rem;
+    padding: 1rem;
+    position: relative;
+    border: .5rem double rgba(30, 39, 46, 0.4);
+}
+
+.contact-card .heading-main {
+    font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    line-height: 1.7;
+    padding-bottom: 1rem;
+}
+
+.contact-card .description {
+    padding: 2rem;
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+.contact-card:first-child {
+    align-items: center;
+    text-align: center;
+}
+
+.contact-card:first-child .description {
+    line-height: 2.5;
+}
+
+.contact-card .description .phone-number {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #fbc531;
+}
+
+.card-img {
+    width: 85%;
+    height: 40rem;
+    object-fit: bottom;
+    border: .2rem solid #1e272e;
+}
 
 /****************************** ANIMATIONS ******************************/
 @keyframes fadeInLeft {
