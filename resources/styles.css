@@ -362,6 +362,7 @@ button.cta {
 @media only screen and (max-width: 1360px) {
     #holidays .image-container {
         width: 70%;
+        gap: 6rem;
     }
 }
 
@@ -720,7 +721,7 @@ input:focus::placeholder {
     border: .2rem solid #1e272e;
 }
 
-@media only screen and (max-width: 1659px) {
+@media only screen and (max-width: 1800px) {
     #contact .heading-container {
         margin: 5rem 0 5rem 0;
     }
@@ -744,7 +745,7 @@ input:focus::placeholder {
     }
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1600px) {
     #contact .heading-container {
         margin: 0;
     }
