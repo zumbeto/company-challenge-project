@@ -42,7 +42,7 @@ body {
 
 .heading-container {
     display: flex;
-    height: 10rem;
+    min-height: 10rem;
     width: 100%;
     flex-direction: column;
     justify-content: space-around;
@@ -346,10 +346,6 @@ button.cta {
         width: 100%;
         gap: 2rem;
     }
-
-    #holidays.container {
-        min-height: 100rem;
-    }
 }
 
 @media only screen and (max-width: 1440px) {
@@ -359,7 +355,7 @@ button.cta {
     }
 
     #holidays.container {
-        min-height: 100rem;
+        min-height: 120rem;
     }
 }
 
@@ -387,6 +383,7 @@ button.cta {
 
     #holidays .heading-container {
         width: 100%;
+        padding: 2rem 3rem 2rem 3rem;
     }
 
     #holidays .heading-main {
@@ -413,6 +410,8 @@ button.cta {
 
     #holidays .cta {
         padding: 1rem;
+        font-size: 1.4rem;
+        letter-spacing: 0;
     }
 }
 
@@ -423,7 +422,7 @@ button.cta {
     padding: 1rem 0 1rem 0;
 }
 
-#team .container {
+#team.container {
     background: url(images/london-background-image.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/london-background-image.jpg);
     background-size: cover;
@@ -468,9 +467,98 @@ button.cta {
     padding: 1rem 1rem 0 1rem;
 }
 
+@media only screen and (max-width: 1600px) {
+    #team .image-wrapper {
+        width: 25rem;
+        min-height: 40rem;
+    }
+
+    .team-img {
+        width: 100%;
+        height: 60%;
+        object-fit: fill;
+    }
+
+    #team .image-wrapper p.name {
+        font-size: 1.8rem;
+    }
+
+    #team .image-wrapper p.description {
+        font-size: 1.5rem;
+        padding: .7rem .7rem 0 .7rem;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    #team.container {
+        min-height: 160rem;
+    }
+
+    #team .image-container {
+        width: 55%;
+    }
+
+    #team .image-wrapper {
+        width: 22rem;
+        min-height: 37rem;
+    }
+
+    .team-img {
+        width: 100%;
+        height: 50%;
+        object-fit: fill;
+    }
+
+    #team .heading-main {
+        font-size: 2.5rem;
+    }
+
+    #team .description {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    #team .heading-main {
+        font-size: 2rem;
+    }
+
+    #team .heading-container {
+        padding: 2rem 5rem 2rem 5rem;
+        text-align: center;
+        min-height: 10rem;
+    }
+
+    #team .description {
+        font-size: 1.6rem;
+    }
+
+    #team .image-wrapper p.name {
+        font-size: 1.6rem;
+    }
+
+    #team .image-wrapper p.description {
+        font-size: 1.4rem;
+        padding: .5rem .5rem 0 .5rem;
+    }
+
+    #team .image-wrapper {
+        width: 22rem;
+        min-height: 33rem;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    #team .cta {
+        padding: 1rem;
+        font-size: 1.4rem;
+        letter-spacing: 0;
+    }
+}
+
 /****************************** ABOUT US SECTION ******************************/
-#about .container {
-    min-height: 60rem;
+#about.container {
+    min-height: 90rem;
 }
 
 #about .heading-container {
@@ -487,8 +575,50 @@ button.cta {
     width: 5%;
 }
 
+@media only screen and (max-width: 1440px) {
+    #about.container {
+        min-height: 100rem;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    #about .heading-main {
+        font-size: 2.5rem;
+    }
+
+    #about .description {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    #about.container {
+        min-height: 120rem;
+    }
+    
+    #about .heading-container {
+        text-align: center;
+        width: 50%;
+    }
+    
+    #about .heading-main {
+        font-size: 2rem;
+    }
+
+    #about .description {
+        font-size: 1.6rem;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    #about.container {
+        min-height: 140rem;
+    }
+}
+
 /****************************** CONTACT US SECTION ******************************/
-#contact .container {
+#contact.container {
     position: relative;
     top: 15.6rem;
     display: flex;
@@ -496,6 +626,7 @@ button.cta {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    margin-bottom: 10rem;
 }
 
 .centre-finder {
@@ -536,6 +667,7 @@ input:focus::placeholder {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    padding: 0 2rem 0 2rem;
 }
 
 .contact-card {
@@ -588,6 +720,167 @@ input:focus::placeholder {
     border: .2rem solid #1e272e;
 }
 
+@media only screen and (max-width: 1659px) {
+    #contact .heading-container {
+        margin: 5rem 0 5rem 0;
+    }
+
+    #contact .contact-card {
+        width: 40rem;
+        height: 65rem;
+        padding: .5rem;
+    }
+
+    #contact .card-img {
+        height: 30rem;
+    }
+
+    #contact .cta {
+        padding: 1rem 5rem 1rem 5rem;
+    }
+
+    .contact-card .heading-main {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    #contact .heading-container {
+        margin: 0;
+    }
+
+    #contact .contact-card {
+        width: 37rem;
+        height: 65rem;
+        padding: .5rem;
+    }
+
+    #contact .cta {
+        padding: 1rem 3rem 1rem 3rem;
+    }
+
+    #contact .contact-card .heading-main {
+        font-size: 2rem;
+    }
+
+    .contact-card-container {
+        gap: 4rem;
+        padding: 0 8rem 0 8rem;
+    }
+
+    .contact-card:first-child .description {
+        line-height: 2;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    #contact .heading-container {
+        margin: 5rem 0 5rem 0;
+    }
+
+    #contact .heading-main {
+        font-size: 2.5rem;
+    }
+
+    #contact .contact-card {
+        width: 33rem;
+        height: 57rem;
+        padding: .5rem;
+    }
+
+    #contact .card-img {
+        height: 20rem;
+    }
+
+    #contact .cta {
+        padding: 1rem 2rem 1rem 2rem;
+        font-size: 1.4rem;
+    }
+
+    #contact .contact-card .heading-main {
+        font-size: 2rem;
+    }
+
+    #contact .centre-finder {
+        width: 45%;
+        text-align: center;
+    }
+
+    .contact-card .description .phone-number {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    #contact .heading-container {
+        margin: 3rem 0 3rem 0;
+    }
+
+    #contact .heading-main {
+        font-size: 2rem;
+    }
+
+    #contact .contact-card {
+        width: 33rem;
+        height: 55rem;
+        padding: .5rem;
+    }
+
+    #contact .card-img {
+        height: 20rem;
+    }
+
+    #contact .cta {
+        padding: 1rem;
+        font-size: 1.4rem;
+        letter-spacing: 0;
+    }
+
+    #contact .contact-card .heading-main {
+        font-size: 1.8rem;
+    }
+
+    #contact .centre-finder {
+        width: 45%;
+        text-align: center;
+    }
+
+    .contact-card .description .phone-number {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    #contact .heading-container {
+        margin: 3rem 0 2rem 0;
+    }
+
+    #contact .contact-card {
+        width: 35rem;
+        height: 72rem;
+        padding: .5rem;
+    }
+
+    #contact .cta {
+        padding: 1rem .5rem 1rem .5rem;
+        font-size: 1.4rem;
+    }
+
+    #contact .contact-card .heading-main {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    #contact .centre-finder {
+        width: 60%;
+        text-align: center;
+    }
+
+    .contact-card .description .phone-number {
+        font-size: 1.8rem;
+    }
+}
+
 /****************************** FOOTER ******************************/
 
 #footer .container {
@@ -607,6 +900,40 @@ input:focus::placeholder {
     font-size: 2rem;
     font-weight: 900;
     color: #fbc531;
+}
+
+@media only screen and (max-width: 1030px) {
+    #footer .heading-main {
+        font-size: 2.5rem;
+    }
+
+    #footer .description {
+        font-size: 1.6rem;
+    }
+
+    #footer .description .phone-number {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    #footer .container .heading-container {
+        justify-content: center;
+    }
+    
+    #footer .heading-main {
+        font-size: 2rem;
+        padding: 1rem 0 1rem 0;
+    }
+
+    #footer .description {
+        font-size: 1.4rem;
+        padding: 1rem 0 1rem 0;
+    }
+
+    #footer .description .phone-number {
+        font-size: 1.6rem;
+    }
 }
 
 /****************************** ANIMATIONS ******************************/
