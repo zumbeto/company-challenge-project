@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Roboto+Mono:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+
 
 /*
 STYLE GUIDE
@@ -10,7 +11,7 @@ STYLE GUIDE
 #1e272e
 
 2.TYPOGRAPHY
-FONT-FACE: "Roboto Mono" or "Alkatra"
+FONT-FACE: "Montserrat" or "Alkatra"
 
 /* Universal Styles */
 * {
@@ -25,7 +26,63 @@ html {
 
 body {
     box-sizing: border-box;
-    font-family: 'Alkatra', cursive;
+    font-family: 'Alkatra', 'Montserrat', sans-serif, cursive;
+}
+
+.container {
+    position: relative;
+    top: 15.6rem;
+    display: flex;
+    min-height: 120rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.heading-container {
+    display: flex;
+    height: 10rem;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.heading-main {
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+}
+
+.description {
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: .1rem;
+}
+
+.line {
+    width: 2%;
+    border: .1rem solid #fbc531;
+    animation: fadeInRight 1s ease-out;
+    margin-bottom: .7rem;
+}
+
+.image-container {
+    display: flex;
+    gap: 8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-wrapper {
+    display: inline-flex;
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    cursor: pointer;
+    border: .5rem double #1e272e;
 }
 
 /****************************** Header ******************************/
@@ -36,11 +93,10 @@ body {
     z-index: 1000;
 }
 
-.heading-container {
+.brand-name-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0 1rem 0;
     background-color: #1e272e;
 }
 
@@ -63,11 +119,11 @@ body {
 ul.navbar {
     display: flex;
     width: 100%;
-    min-height: 8.7rem;
+    min-height: 6.7rem;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    padding: 3rem 2rem 3rem 2rem;
+    padding: 0 2rem 0 2rem;
     background-color: #fbc531;
     box-shadow: 0 .2rem 1rem 0 rgb(121, 121, 121);
     font-weight: 300;
@@ -81,6 +137,7 @@ ul.navbar .nav-link, .nav-link:link, .nav-link:visited {
     text-decoration-color: #fbc531;
     text-decoration-thickness: .2rem;
     font-size: 1.6rem;
+    letter-spacing: .1rem;
     color: #f5f6fa;
     background-color: #002255;
     border: .1rem solid #fbc531;
@@ -100,13 +157,13 @@ ul.navbar li .nav-link:hover {
 #hero {
     display: flex;
     width: 100%;
-    min-height: 100rem;
+    min-height: 120rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-    top: 19.6rem;
+    top: 15.6rem;
     background: url(images/hero-background-image-unsplash.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/hero-background-image-unsplash.jpg);
     background-size: 100% 100%;
@@ -135,16 +192,10 @@ ul.navbar li .nav-link:hover {
 .hero-heading-sub {
     color: #f5f6fa;
     font-size: 3rem;
-    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     letter-spacing: .2rem;
     animation: fadeInRight 1s ease-out;
-}
-
-.line {
-    width: 2%;
-    border: .1rem solid #fbc531;
-    animation: fadeInRight 1s ease-out;
-    margin-bottom: .7rem;
 }
 
 .cta, .cta:link, .cta:visited {
@@ -170,61 +221,22 @@ ul.navbar li .nav-link:hover {
 }
 
 /****************************** HOLIDAYS SECTION ******************************/
-.container {
-    position: relative;
-    top: 19.6rem;
-    display: flex;
-    min-height: 100rem;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 50rem;
-}
-
 .holidays-img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.image-container {
-    display: flex;
-    gap: 8rem;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.holidays-heading-container {
-    display: flex;
-    height: 10rem;
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.holidays-heading-main {
-    font-size: 3rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: .5rem;
-}
-
-.holidays-description {
-    font-size: 1.8rem;
-    font-weight: 100;
-}
-
-.image-card {
+#holidays .image-wrapper {
     display: inline-flex;
-    width: 30rem;
-    height: 30rem;
+    width: 40rem;
+    height: 40rem;
     position: relative;
     cursor: pointer;
     border: .5rem double #1e272e;
 }
 
-.image-card .overlay {
+.image-wrapper .overlay {
     background: rgba(0, 0, 0, 0.4);
     position: absolute;
     height: 100%;
@@ -237,7 +249,7 @@ ul.navbar li .nav-link:hover {
     transition: all 0.4s ease-in-out 0s;
 }
 
-.image-card:hover .overlay {
+.image-wrapper:hover .overlay {
     opacity: 1;
 }
 
@@ -259,7 +271,7 @@ ul.navbar li .nav-link:hover {
     transition: all 0.3s ease-in-out 0s;
 }
 
-.image-card:hover .overlay-text {
+.image-wrapper:hover .overlay-text {
     top: 50%;
     left: 50%;
     opacity: 1;
@@ -270,8 +282,61 @@ ul.navbar li .nav-link:hover {
 }
 
 button.cta {
-    padding: 1.5rem;
+    font-family: inherit;
+    padding: 1rem 10rem 1rem 10rem;
     margin: 0;
+}
+
+/****************************** OUR TEAM SECTION ******************************/
+#team .heading-container {
+    background-color: rgba(30, 39, 46, 0.7);
+    color: #f5f6fa;
+    padding: 1rem 0 1rem 0;
+}
+
+#team .container {
+    background: url(images/london-background-image.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/london-background-image.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+#team .image-wrapper {
+    width: 30rem;
+    min-height: 50rem;
+    border: .2rem solid #f5f6fa;
+    flex-direction: column;
+    text-align: center;
+    cursor: default;
+    background-color: rgba(30, 39, 46, 0.8);
+}
+
+.team-img {
+    width: 100%;
+    height: 70%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+#team .image-wrapper p.name {
+    color: #f5f6fa;
+    background-color: #002255;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    word-spacing: .3rem;
+}
+
+#team .image-wrapper p.description {
+    color: #f5f6fa;
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    line-height: 1.5;
+    padding: 1rem 1rem 0 1rem;
 }
 
 /****************************** ANIMATIONS ******************************/
