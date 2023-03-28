@@ -8,6 +8,7 @@ STYLE GUIDE
 #fbc531
 #002255
 #1e272e
+rgba(30, 39, 46, 0.7) - image overlay for better text readability
 
 2.TYPOGRAPHY
 FONT-FACE: "Montserrat" or "Alkatra"
@@ -448,6 +449,27 @@ button.cta {
     height: 40rem;
     object-fit: bottom;
     border: .2rem solid #1e272e;
+}
+
+/****************************** FOOTER ******************************/
+
+#footer .container {
+    min-height: 30rem;
+    background-color: #1e272e;
+    color: #f5f6fa;
+}
+
+#footer .heading-container {
+    width: 100%;
+    height: 30rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer .phone-number {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fbc531;
 }
 
 /****************************** ANIMATIONS ******************************/
