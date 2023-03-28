@@ -116,6 +116,19 @@ body {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 680px) {
+    #header h1 {
+        font-size: 2rem;
+        word-spacing: 0;
+        margin-bottom: 1rem;
+    }
+
+    .logo {
+        width: 3rem;
+        margin-bottom: .3rem;
+    }
+}
+
 /****************************** Navigation Bar ******************************/
 ul.navbar {
     display: flex;
@@ -152,6 +165,12 @@ ul.navbar li .nav-link:hover {
     cursor: pointer;
     border: .1rem solid #f5f6fa;
     color: #fbc531;
+}
+
+@media only screen and (max-width: 680px) {
+    ul.navbar {
+        display: none;
+    }
 }
 
 /****************************** HERO SECTION ******************************/
@@ -221,6 +240,29 @@ ul.navbar li .nav-link:hover {
     border: .1rem solid #002255;
 }
 
+@media only screen and (max-width: 680px) {
+    #hero {
+        top: 5.5rem;
+        min-height: 100rem;
+        background-size: 100% 100%;
+    }
+
+    .hero-heading-main {
+        font-size: 3rem;
+        letter-spacing: .5rem;
+    }
+
+    .hero-heading-sub {
+        font-size: 1.8rem;
+        letter-spacing: .1rem;
+    }
+
+    #hero .cta {
+        padding: .5rem 1rem .5rem 1rem;
+        font-size: 1.4rem;
+    }
+}
+
 /****************************** HOLIDAYS SECTION ******************************/
 .holidays-img {
     width: 100%;
@@ -286,6 +328,92 @@ button.cta {
     font-family: inherit;
     padding: 1rem 10rem 1rem 10rem;
     margin: 0;
+}
+
+@media only screen and (max-width: 2000px) {
+    #holidays .image-wrapper {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    #holidays .image-container {
+        padding: 0 5rem 0 5rem;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    #holidays .image-container {
+        width: 100%;
+        gap: 2rem;
+    }
+
+    #holidays.container {
+        min-height: 100rem;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    #holidays .image-container {
+        width: 100%;
+        gap: 2rem;
+    }
+
+    #holidays.container {
+        min-height: 100rem;
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    #holidays .image-container {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    #holidays.container {
+        min-height: 160rem;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    #holidays .image-container {
+        gap: 2.5rem;
+    }
+    
+    #holidays .image-wrapper {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    #holidays .heading-container {
+        width: 100%;
+    }
+
+    #holidays .heading-main {
+        font-size: 2rem;
+    }
+
+    #holidays .description {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    #holidays.container {
+        min-height: 140rem;
+    }
+
+    #holidays .heading-container {
+        text-align: center;
+    }
+    
+    #holidays .image-container {
+        gap: 2rem;
+    }
+
+    #holidays .cta {
+        padding: 1rem;
+    }
 }
 
 /****************************** OUR TEAM SECTION ******************************/
@@ -378,7 +506,7 @@ button.cta {
 }
 
 .centre-finder input {
-    height: 7rem;
+    height: 6rem;
     border: .5rem double rgba(30, 39, 46, 0.3);
     padding: 2rem;
     text-align: center;
@@ -387,6 +515,14 @@ button.cta {
 .centre-finder input:focus {
     outline: none;
     border: .2rem solid #fbc531;
+}
+
+input::placeholder {
+    font-size: 1.6rem;
+}
+
+input:focus::placeholder {
+    opacity: 0;
 }
 
 .centre-finder .line {
@@ -399,6 +535,7 @@ button.cta {
     gap: 8rem;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
 .contact-card {
