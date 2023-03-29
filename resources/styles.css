@@ -126,7 +126,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 768px) {
     #header {
         min-height: 5rem;
     }
@@ -181,7 +181,7 @@ ul.navbar li .nav-link:hover {
     color: #fbc531;
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 768px) {
     ul.navbar {
         display: none;
     }
@@ -268,7 +268,7 @@ ul.navbar li .nav-link:hover {
     }
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 768px) {
     #hero {
         top: 5.5rem;
         background-size: cover;
@@ -431,15 +431,19 @@ button.cta {
     }
 
     #holidays .description {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 768px) {
     #holidays.container {
         position: relative;
         top: 7.6rem;
         min-height: 120rem;
+    }
+
+    #holidays .heading-main {
+        font-size: 2rem;
     }
 
     #holidays .heading-container {
@@ -464,7 +468,7 @@ button.cta {
 
     #holidays .cta {
         padding: 1rem;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         letter-spacing: 0;
         margin-top: 5rem;
     }
@@ -544,7 +548,7 @@ button.cta {
     }
 
     #team .image-wrapper p.description {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         padding: .7rem .7rem 0 .7rem;
     }
 }
@@ -603,19 +607,19 @@ button.cta {
     }
 
     #team .image-wrapper p.description {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         padding: .5rem .5rem 0 .5rem;
     }
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 768px) {
     #team.container {
         min-height: 180rem;
     }
     
     #team .cta {
         padding: 1rem;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         letter-spacing: 0;
     }
 }
@@ -626,7 +630,7 @@ button.cta {
 }
 
 #about .heading-container {
-    width: 40%;
+    width: 50%;
     height: 100%;
     text-align: justify;
     gap: 2rem;
@@ -639,32 +643,25 @@ button.cta {
     width: 5%;
 }
 
+@media only screen and (max-width: 1600px) {
+    #about .heading-container {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    #about.container {
+        min-height: 60rem;
+    }
+}
+
 @media only screen and (max-width: 1440px) {
     #about.container {
-        min-height: 100rem;
+        min-height: 60rem;
     }
 }
 
 @media only screen and (max-width: 1030px) {
-    #about .heading-main {
-        font-size: 2.5rem;
-    }
-
-    #about .description {
-        font-size: 1.6rem;
-    }
-}
-
-@media only screen and (max-width: 780px) {
-    #about.container {
-        min-height: 120rem;
-    }
-    
-    #about .heading-container {
-        text-align: center;
-        width: 50%;
-    }
-    
     #about .heading-main {
         font-size: 2rem;
     }
@@ -675,13 +672,14 @@ button.cta {
     }
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 768px) {
     #about.container {
-        min-height: 100rem;
+        min-height: 90rem;
+        top: 13.3rem;
     }
 
-    #about .heading-container {
-        width: 75%;
+    #about .heading-main {
+        text-align: center;
     }
 }
 
@@ -709,6 +707,7 @@ button.cta {
     border: .5rem double rgba(30, 39, 46, 0.3);
     padding: 2rem;
     text-align: center;
+    touch-action: manipulation;
 }
 
 .centre-finder input:focus {
@@ -862,7 +861,7 @@ input:focus::placeholder {
 
     #contact .cta {
         padding: 1rem 2rem 1rem 2rem;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     #contact .contact-card .heading-main {
@@ -879,7 +878,7 @@ input:focus::placeholder {
     }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 768px) {
     #contact .heading-container {
         margin: 3rem 0 3rem 0;
     }
@@ -900,7 +899,6 @@ input:focus::placeholder {
 
     #contact .cta {
         padding: 1rem;
-        font-size: 1.4rem;
         letter-spacing: 0;
     }
 
@@ -935,8 +933,6 @@ input:focus::placeholder {
     }
 
     #contact .cta {
-        padding: 1rem .5rem 1rem .5rem;
-        font-size: 1.4rem;
         margin-top: 2rem;
     }
 
@@ -990,7 +986,7 @@ input:focus::placeholder {
     }
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 768px) {
     #footer .container .heading-container {
         justify-content: center;
     }
