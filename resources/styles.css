@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
 
 /*
-STYLE GUIDE
+STYLES
 
 1.CUSTOM COLORS
 #f5f6fa
@@ -127,6 +127,10 @@ body {
 }
 
 @media only screen and (max-width: 680px) {
+    #header {
+        min-height: 5rem;
+    }
+    
     #header h1 {
         font-size: 2rem;
         word-spacing: 0;
@@ -253,14 +257,28 @@ ul.navbar li .nav-link:hover {
 @media only screen and (max-width: 1600px) {
     #hero {
         top: 13.3rem;
+        min-height: 90vh;
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    #hero {
+        background-size: cover;
+        background-position: center;
     }
 }
 
 @media only screen and (max-width: 680px) {
     #hero {
         top: 5.5rem;
-        min-height: 100rem;
-        background-size: 100% 100%;
+        background-size: cover;
+        background-position: center;
+        min-height: 60rem;
+    }
+
+    .hero-heading-container {
+        padding: 1rem 0 1rem 0;
+        margin-bottom: 2rem;
     }
 
     .hero-heading-main {
@@ -276,6 +294,7 @@ ul.navbar li .nav-link:hover {
     #hero .cta {
         padding: .5rem 1rem .5rem 1rem;
         font-size: 1.4rem;
+        margin: 0;
     }
 }
 
@@ -358,6 +377,11 @@ button.cta {
 }
 
 @media only screen and (max-width: 1600px) {
+    #holidays.container {
+        top: 13.3rem;
+        min-height: 100rem;
+    }
+    
     #holidays .image-container {
         width: 100%;
         gap: 2rem;
@@ -365,13 +389,14 @@ button.cta {
 }
 
 @media only screen and (max-width: 1440px) {
+    #holidays.container {
+        top: 13.3rem;
+        min-height: 100rem;
+    }
+    
     #holidays .image-container {
         width: 100%;
         gap: 2rem;
-    }
-
-    #holidays.container {
-        min-height: 120rem;
     }
 }
 
@@ -382,20 +407,18 @@ button.cta {
     }
 }
 
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 1090px) {
     #holidays.container {
-        min-height: 160rem;
+        min-height: 180rem;
     }
-}
 
-@media only screen and (max-width: 780px) {
     #holidays .image-container {
         gap: 2.5rem;
     }
     
     #holidays .image-wrapper {
-        width: 25rem;
-        height: 25rem;
+        width: 40rem;
+        height: 35rem;
     }
 
     #holidays .heading-container {
@@ -404,17 +427,19 @@ button.cta {
     }
 
     #holidays .heading-main {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     #holidays .description {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 680px) {
     #holidays.container {
-        min-height: 140rem;
+        position: relative;
+        top: 7.6rem;
+        min-height: 120rem;
     }
 
     #holidays .heading-container {
@@ -422,13 +447,26 @@ button.cta {
     }
     
     #holidays .image-container {
+        width: 95%;
         gap: 2rem;
+        padding: 2rem 3rem 0 3rem;
+    }
+
+    #holidays .image-wrapper {
+        width: 35rem;
+        height: 25rem;
+    }
+
+    #holidays .image-wrapper .overlay-text {
+        opacity: 1;
+        top: 50%;
     }
 
     #holidays .cta {
         padding: 1rem;
         font-size: 1.4rem;
         letter-spacing: 0;
+        margin-top: 5rem;
     }
 }
 
@@ -485,6 +523,11 @@ button.cta {
 }
 
 @media only screen and (max-width: 1600px) {
+    #team.container {
+        top: 13.3rem;
+        min-height: 100rem;
+    }
+    
     #team .image-wrapper {
         width: 25rem;
         min-height: 40rem;
@@ -506,23 +549,24 @@ button.cta {
     }
 }
 
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 1090px) {
     #team.container {
         min-height: 160rem;
     }
 
     #team .image-container {
-        width: 55%;
+        width: 80%;
+        gap: 4rem;
     }
 
     #team .image-wrapper {
-        width: 22rem;
-        min-height: 37rem;
+        width: 30rem;
+        min-height: 45rem;
     }
 
     .team-img {
         width: 100%;
-        height: 50%;
+        height: 70%;
         object-fit: fill;
     }
 
@@ -535,7 +579,11 @@ button.cta {
     }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 800px) {
+    #team.container {
+        min-height: 180rem;
+    }
+    
     #team .heading-main {
         font-size: 2rem;
     }
@@ -558,14 +606,13 @@ button.cta {
         font-size: 1.4rem;
         padding: .5rem .5rem 0 .5rem;
     }
-
-    #team .image-wrapper {
-        width: 22rem;
-        min-height: 33rem;
-    }
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 680px) {
+    #team.container {
+        min-height: 180rem;
+    }
+    
     #team .cta {
         padding: 1rem;
         font-size: 1.4rem;
@@ -628,9 +675,13 @@ button.cta {
     }
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 680px) {
     #about.container {
-        min-height: 140rem;
+        min-height: 100rem;
+    }
+
+    #about .heading-container {
+        width: 75%;
     }
 }
 
@@ -867,20 +918,26 @@ input:focus::placeholder {
     }
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 680px) {
+    #contact .contact-card-container {
+        padding: 0 4rem 0 4rem;
+        gap: 2rem;
+    }
+    
     #contact .heading-container {
         margin: 3rem 0 2rem 0;
     }
 
     #contact .contact-card {
-        width: 35rem;
-        height: 72rem;
+        width: 40rem;
+        height: 60rem;
         padding: .5rem;
     }
 
     #contact .cta {
         padding: 1rem .5rem 1rem .5rem;
         font-size: 1.4rem;
+        margin-top: 2rem;
     }
 
     #contact .contact-card .heading-main {
@@ -889,7 +946,7 @@ input:focus::placeholder {
     }
 
     #contact .centre-finder {
-        width: 60%;
+        width: 75%;
         text-align: center;
     }
 
@@ -933,7 +990,7 @@ input:focus::placeholder {
     }
 }
 
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 680px) {
     #footer .container .heading-container {
         justify-content: center;
     }
