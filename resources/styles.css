@@ -559,7 +559,7 @@ button.cta {
     }
 
     #team .image-container {
-        width: 80%;
+        width: 90%;
         gap: 4rem;
     }
 
@@ -583,7 +583,7 @@ button.cta {
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
     #team.container {
         min-height: 180rem;
     }
@@ -602,6 +602,11 @@ button.cta {
         font-size: 1.6rem;
     }
 
+    #team .image-container {
+        width: 80%;
+        gap: 2rem;
+    }
+
     #team .image-wrapper p.name {
         font-size: 1.6rem;
     }
@@ -610,13 +615,7 @@ button.cta {
         font-size: 1.6rem;
         padding: .5rem .5rem 0 .5rem;
     }
-}
 
-@media only screen and (max-width: 768px) {
-    #team.container {
-        min-height: 180rem;
-    }
-    
     #team .cta {
         padding: 1rem;
         font-size: 1.6rem;
