@@ -1,152 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="resources/styles.css">
-  <title>Pathfinders - The Travel Experts</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon_io-yellow/favicon.ico">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resources/styles.css" />
+    <title>Pathfinders - The Travel Experts</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="resources/favicon_io-yellow/favicon.ico"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header">
+      <div class="brand-name-container">
+        <h1 class="brand-name">
+          Pathfinders
+          <img
+            src="resources/favicon_io-yellow/android-chrome-512x512.png"
+            alt="Company Logo"
+            class="logo"
+          />
+        </h1>
+      </div>
+      <ul class="navbar">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#holidays" class="nav-link">Destinations</a></li>
+        <li><a href="#team" class="nav-link">The Team</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+    </header>
 
-  <!-- HEADER -->
-  <header id="header">
-    <div class="brand-name-container">
-      <h1 class="brand-name">Pathfinders <img src="resources/favicon_io-yellow/android-chrome-512x512.png" alt="Company Logo" class="logo"></h1>
-    </div>
-    <ul class="navbar">
-      <li><a href="#hero" class="nav-link">Home</a></li>
-      <li><a href="#holidays" class="nav-link">Destinations</a></li>
-      <li><a href="#team" class="nav-link">The Team</a></li>
-      <li><a href="#about" class="nav-link">About Us</a></li>
-      <li><a href="#contact" class="nav-link">Contact Us</a></li>
-    </ul>
-  </header>
-
-  <!-- HERO SECTION -->
-  <div id="hero">
+    <!-- HERO SECTION -->
+    <div id="hero">
       <div class="hero-heading-container">
-          <h1 class="hero-heading-main">Pathfinders</h1>
-          <hr class="line">
-          <h4 class="hero-heading-sub">The Travel Experts</h4>
+        <h1 class="hero-heading-main">Pathfinders</h1>
+        <hr class="line" />
+        <h4 class="hero-heading-sub">The Travel Experts</h4>
       </div>
       <a href="#team" class="cta">Find Out More</a>
-  </div>
+    </div>
 
-  <!-- HOLIDAYS SECTION -->
+    <!-- HOLIDAYS SECTION -->
     <div id="holidays" class="container">
-        <div class="heading-container">
-            <h2 class="heading-main">Holiday Inspirations</h2>
-            <hr class="line">
-            <p class="description">Spotlight on four of our most popular destinations</p>
-        </div>
+      <div class="heading-container">
+        <h2 class="heading-main">Holiday Inspirations</h2>
+        <hr class="line" />
+        <p class="description">
+          Spotlight on four of our most popular destinations
+        </p>
+      </div>
       <div class="image-container">
-          <div class="image-wrapper">
-              <div class="overlay"></div>
-              <img class="holidays-img" src="resources/images/indonesia-unsplash-image.jpg" alt="Indonesia Holiday">
-              <h5 class="overlay-text fadeIn-top">Indonesia Holidays</h5>
-          </div>
-          <div class="image-wrapper">
-              <div class="overlay"></div>
-              <img class="holidays-img" src="resources/images/italy-unsplash-image.jpg" alt="Italy Holiday">
-              <h5 class="overlay-text fadeIn-top">Italy Holidays</h5>
-          </div>
-          <div class="image-wrapper">
-              <div class="overlay"></div>
-              <img class="holidays-img" src="resources/images/iceland-unsplash-image.jpg" alt="Iceland Holiday">
-              <h5 class="overlay-text fadeIn-top">Iceland Holidays</h5>
-          </div>
-          <div class="image-wrapper">
-              <div class="overlay"></div>
-              <img class="holidays-img" src="resources/images/thailand-unsplash-image.jpg" alt="Thailand Holiday">
-              <h5 class="overlay-text fadeIn-top">Thailand Holidays</h5>
-          </div>
+        <div class="image-wrapper">
+          <div class="overlay"></div>
+          <img
+            class="holidays-img"
+            src="resources/images/indonesia-unsplash-image.jpg"
+            alt="Indonesia Holiday"
+          />
+          <h5 class="overlay-text fadeIn-top">Indonesia Holidays</h5>
+        </div>
+        <div class="image-wrapper">
+          <div class="overlay"></div>
+          <img
+            class="holidays-img"
+            src="resources/images/italy-unsplash-image.jpg"
+            alt="Italy Holiday"
+          />
+          <h5 class="overlay-text fadeIn-top">Italy Holidays</h5>
+        </div>
+        <div class="image-wrapper">
+          <div class="overlay"></div>
+          <img
+            class="holidays-img"
+            src="resources/images/iceland-unsplash-image.jpg"
+            alt="Iceland Holiday"
+          />
+          <h5 class="overlay-text fadeIn-top">Iceland Holidays</h5>
+        </div>
+        <div class="image-wrapper">
+          <div class="overlay"></div>
+          <img
+            class="holidays-img"
+            src="resources/images/thailand-unsplash-image.jpg"
+            alt="Thailand Holiday"
+          />
+          <h5 class="overlay-text fadeIn-top">Thailand Holidays</h5>
+        </div>
       </div>
       <button class="cta">Explore all our destinations</button>
-      </div>
+    </div>
 
-  <!-- OUR TEAM SECTION -->
+    <!-- OUR TEAM SECTION -->
     <div id="team" class="container">
       <div class="heading-container">
         <h2 class="heading-main">Our Team</h2>
-        <hr class="line">
-        <p class="description">Highly trained Travel Consultants on hand to look after you every step of the way</p>
+        <hr class="line" />
+        <p class="description">
+          Highly trained Travel Consultants on hand to look after you every step
+          of the way
+        </p>
       </div>
       <div class="image-container">
         <div class="image-wrapper">
-          <img src="resources/images/consultant-debbie-johnson.jpg" alt="Debbie Johnson" class="team-img">
+          <img
+            src="resources/images/consultant-debbie-johnson.jpg"
+            alt="Debbie Johnson"
+            class="team-img"
+          />
           <p class="name">Debbie Johnson</p>
-          <p class="description">Seasoned Travel Consultant with over 8 years of experience.</p>
+          <p class="description">
+            Seasoned Travel Consultant with over 8 years of experience.
+          </p>
         </div>
         <div class="image-wrapper">
-          <img src="resources/images/consultant-tom-morrison.jpg" alt="Tom Morrison" class="team-img">
+          <img
+            src="resources/images/consultant-tom-morrison.jpg"
+            alt="Tom Morrison"
+            class="team-img"
+          />
           <p class="name">Tom Morrison</p>
-          <p class="description">Tom has more than 12 years of experience and an extensive knowledge of many of the top travel destinations.</p>
+          <p class="description">
+            Tom has more than 12 years of experience and an extensive knowledge
+            of many of the top travel destinations.
+          </p>
         </div>
         <div class="image-wrapper">
-          <img src="resources/images/consultant-emma-brown.jpg" alt="Emma Brown" class="team-img">
+          <img
+            src="resources/images/consultant-emma-brown.jpg"
+            alt="Emma Brown"
+            class="team-img"
+          />
           <p class="name">Emma Brown</p>
-          <p class="description">Seasoned travel and tourism professional with more than 10 years of experience.</p>
+          <p class="description">
+            Seasoned travel and tourism professional with more than 10 years of
+            experience.
+          </p>
         </div>
       </div>
       <button class="cta">Book a Virtual Appointment</button>
     </div>
 
-  <!-- ABOUT US SECTION -->
+    <!-- ABOUT US SECTION -->
     <div id="about" class="container">
       <div class="heading-container">
         <h2 class="heading-main">About Pathfinders</h2>
-        <hr class="line">
+        <hr class="line" />
         <p class="description">
-          Pathfinders was founded in 1977 by John Murphy with a staff of four. Today the company remains privately owned but has a staff of over 1000 and has made travel arrangements for over 16 million clients.<br>
-          Experts in tailormaking itineraries worldwide, Trailfinders offers unbeatable value and exceptional service. 47 travel centres are staffed by the most experienced travel consultants in the industry who are on hand 7 days a week, located throughout the UK and Ireland. With a worldwide reputation, we have the widest range of flights, tours, hotels, cruises, car & motorhome hire across the globe. From budget to luxury our prices are amongst the lowest you will find anywhere.
+          Pathfinders was founded in 1977 by John Murphy with a staff of four.
+          Today the company remains privately owned but has a staff of over 1000
+          and has made travel arrangements for over 16 million clients.<br />
+          Experts in tailormaking itineraries worldwide, Trailfinders offers
+          unbeatable value and exceptional service. 47 travel centres are
+          staffed by the most experienced travel consultants in the industry who
+          are on hand 7 days a week, located throughout the UK and Ireland. With
+          a worldwide reputation, we have the widest range of flights, tours,
+          hotels, cruises, car & motorhome hire across the globe. From budget to
+          luxury our prices are amongst the lowest you will find anywhere.
         </p>
       </div>
     </div>
 
-  <!-- CONTACT US SECTION -->
+    <!-- CONTACT US SECTION -->
     <div id="contact" class="container">
       <div class="centre-finder">
         <h2 class="heading-main">Find your local Travel Centre</h2>
-        <input type="text" placeholder="Add postcode or City">
+        <input type="text" placeholder="Add postcode or City" />
         <button class="cta">Find</button>
       </div>
       <div class="heading-container">
         <h2 class="heading-main">Contact Details</h2>
-        <hr class="line">
+        <hr class="line" />
       </div>
       <div class="contact-card-container">
         <div class="contact-card">
           <h3 class="heading-main">Call</h3>
-          <p class="description">Our phone lines are open:<br>Monday to Friday: 8:00am - 6:00pm<br>Saturday & Bank Holidays: 9:00am - 4:00pm<br>Sunday: 10:00am - 4:00am</p>
-          <p class="description">Tailormade Travel Worldwide<br><span class="phone-number">020 7300 6901</span><br>Cruise Pathfinders<br><span class="phone-number">020 7300 6902</span><br>Business Class Travel<br><span class="phone-number">020 7300 6903</span></p>
+          <p class="description">
+            Our phone lines are open:<br />Monday to Friday: 8:00am - 6:00pm<br />Saturday
+            & Bank Holidays: 9:00am - 4:00pm<br />Sunday: 10:00am - 4:00am
+          </p>
+          <p class="description">
+            Tailormade Travel Worldwide<br /><span class="phone-number"
+              >020 7300 6901</span
+            ><br />Cruise Pathfinders<br /><span class="phone-number"
+              >020 7300 6902</span
+            ><br />Business Class Travel<br /><span class="phone-number"
+              >020 7300 6903</span
+            >
+          </p>
         </div>
         <div class="contact-card">
           <h3 class="heading-main">Visit</h3>
-          <img src="resources/images/office-building-pexels.jpg" alt="Office Building" class="card-img">
-          <p class="description">The doors to our Travel Centres in the UK are open Monday to Friday from 7:00am to 7:00pm.<br> No appointment necessary.</p>
+          <img
+            src="resources/images/office-building-pexels.jpg"
+            alt="Office Building"
+            class="card-img"
+          />
+          <p class="description">
+            The doors to our Travel Centres in the UK are open Monday to Friday
+            from 7:00am to 7:00pm.<br />
+            No appointment necessary.
+          </p>
         </div>
         <div class="contact-card">
           <h3 class="heading-main">Virtual Consultancy</h3>
-          <img src="resources/images/office-person-phone-call.jpg" alt="Person on the Phone" class="card-img">
-          <p class="description">If you have been dreaming about distant shores, book a virtual face to face consultation with one of our award winning travel experts. Click on the button below to see how this works.</p>
+          <img
+            src="resources/images/office-person-phone-call.jpg"
+            alt="Person on the Phone"
+            class="card-img"
+          />
+          <p class="description">
+            If you have been dreaming about distant shores, book a virtual face
+            to face consultation with one of our award winning travel experts.
+            Click on the button below to see how this works.
+          </p>
           <button class="cta">Book a Virtual Appointment</button>
         </div>
       </div>
     </div>
 
-  <!-- FOOTER -->
-  <footer id="footer">
-    <div class="container">
-      <div class="heading-container">
-        <h2 class="heading-main">Pathfinders</h2>
-        <hr class="line">
-        <p class="description">business@pathfinders.com</p>
-        <p class="description"><span class="phone-number">020 7300 6900</span></p>
-        <p class="description">2023 Pathfinders. All rights reserved &copy;</p>
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="container">
+        <div class="heading-container">
+          <h2 class="heading-main">Pathfinders</h2>
+          <hr class="line" />
+          <p class="description">business@pathfinders.com</p>
+          <p class="description">
+            <span class="phone-number">020 7300 6900</span>
+          </p>
+          <p class="description">
+            2023 Pathfinders. All rights reserved &copy;
+          </p>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
