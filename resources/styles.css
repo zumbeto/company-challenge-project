@@ -201,9 +201,9 @@ ul.navbar li .nav-link:hover {
   flex-wrap: wrap;
   position: relative;
   top: 15.6rem;
-  background: url(images/hero-background-image-unsplash.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(images/hero-background-image-unsplash.jpg);
+  background: url(images/hero_image.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/hero_image.webp);
   background-size: 100% 100%;
 }
 
